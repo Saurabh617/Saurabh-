@@ -1,6 +1,4 @@
-<?php
-session_start();
-
+<?php session_start();
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -28,13 +26,33 @@ session_start();
 		</nav>
 	<div class="login-page">
 		<div class="form">
-			<form class="registration-page" action="register.php" method="POST">
+			<form class="registration-page" action="includes/register.php" method="POST">
+
+
 				<input type="text" placeholder="Username" name="user" class="form-control" autocomplete="off">
+				<p>
+								<?php  echo $error['user'];
+								?>
+						</p>
+
 				<input type="password" placeholder="Password" name="pass" class="form-control" autocomplete="off">
-				<input type="text" placeholder="Email-id" name="email">
+				<p>
+								<?php  echo $error['pass'];
+								?>
+					</p>
+
+				<input type="text" placeholder="Email-id" name="email" value=>
+				<p>
+								<?php  echo $error['email'];
+								?>
+						</p>
+
+
 				<input id="mamu" type="submit" name="submit" value="CREATE">
 				<p class="message">Already registered? <a href="#">Login here </a></p>
 	</form>
+
+
 	<form class="login-form" action="logincheck.php" method="POST">
 		<input type="text" placeholder="Username" name="user" value="" class="form-control" autocomplete="off">
 		<input type="password" placeholder="password" name="pass" value="" class="form-control" autocomplete="off">
