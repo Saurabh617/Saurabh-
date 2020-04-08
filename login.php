@@ -26,7 +26,7 @@
 		</nav>
 	<div class="login-page">
 		<div class="form">
-			<form class="registration-page" action="includes/register.php" method="POST">
+			<form class="registration-page" action="register.php" method="POST">
 
 
 				<input type="text" placeholder="Username" name="user" class="form-control" autocomplete="off">

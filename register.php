@@ -92,6 +92,5 @@ else {
   echo "Error : ".$conn->error;
 }
 }
-include('login.php');
 
  ?>
