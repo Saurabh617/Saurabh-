@@ -7,9 +7,6 @@ if (isset($_POST['submit'])) {
   $count3=0;
   $q=" ";
 
-  $name = "";
-  $email = "";
-  $mpass = "";
 
       $user = $_POST['user'];
       $pass = $_POST['pass'];
@@ -92,5 +89,7 @@ else {
   echo "Error : ".$conn->error;
 }
 }
+
+include 'login.php';
 
  ?>
