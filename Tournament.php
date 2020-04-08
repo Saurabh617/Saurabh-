@@ -50,10 +50,14 @@ session_start();
 			</div>
 
 <div class="row ">
-<div class="col-auto">
-	<input type="button" name="" value="SIGN UP">
 
-</div>
+<form class="" action="Signupfifa.php" method="post">
+  <div class="col-auto">
+  	<input type="submit" name="" value="SIGN UP">
+
+  </div>
+
+</form>
 		</div>
 
 	</div>
